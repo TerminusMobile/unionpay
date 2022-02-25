@@ -38,7 +38,8 @@ Pod::Spec.new do |spec|
 
 
   spec.source       = { :git => "https://github.com/TerminusMobile/unionpay.git"}
-  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64'}
   spec.source_files  =  "inc/**/*.{h,m}"
   spec.frameworks = "Foundation", "UIKit", "CFNetwork", "SystemConfiguration"
   spec.libraries = "z", "stdc++"
