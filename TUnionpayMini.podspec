@@ -42,6 +42,6 @@ Pod::Spec.new do |spec|
   spec.source_files  =  "inc/**/*.{h,m}"
   spec.frameworks = "Foundation", "UIKit", "CFNetwork", "SystemConfiguration"
   spec.libraries = "z", "stdc++"
-  spec.vendored_libraries = "lib/libPaymentControlMini.a"
+  spec.vendored_libraries = "libs/libPaymentControlMini.a"
   # spec.public_header_files = "Classes/**/*.h"
 end
