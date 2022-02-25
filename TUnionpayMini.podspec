@@ -37,7 +37,7 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = "9.0"
 
 
-  spec.source       = { :git => "https://github.com/TerminusMobile/unionpay.git", :tag => "#{spec.version}" }
+  spec.source       = { :git => "https://github.com/TerminusMobile/unionpay.git"}
 
   spec.source_files  =  "inc/**/*.{h,m}"
   spec.frameworks = "Foundation", "UIKit", "CFNetwork", "SystemConfiguration"
