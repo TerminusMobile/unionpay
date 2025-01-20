@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "TUnionpayMini"
-  spec.version      = "3.4.11"
+  spec.version      = "3.6.0"
   spec.summary      = "Terminus Mobile UnionPay sdk"
 
   # This description is used to generate tags and improve search results.
@@ -40,9 +40,5 @@ Pod::Spec.new do |spec|
   
   spec.source       = { :git => "https://github.com/TerminusMobile/unionpay.git", :tag => "#{spec.version}" }
 
-  spec.source_files  =  "inc/**/*.{h,m}"
-  spec.frameworks = "Foundation", "UIKit", "CFNetwork", "SystemConfiguration"
-  spec.libraries = "z", "stdc++"
-  spec.vendored_libraries = "libs/libPaymentControlMini.a"
-  # spec.public_header_files = "Classes/**/*.h"
+  spec.vendored_frameworks = 'UPPaymentControlMini.xcframework'
 end
